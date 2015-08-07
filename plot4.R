@@ -24,7 +24,7 @@ plot(data$new_date, data$Global_active_power,
 
 # topright plot
 plot(data$new_date, data$Voltage, 
-     xlab = "",
+     xlab = "datetime",
      ylab = "Voltage",
      type = "l"
 )
@@ -42,11 +42,12 @@ legend("topright",
        legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
        col = c("gray0", "red", "blue"), 
        lty = 1,
-       cex = 0.9)
+       cex = 0.9,
+       bty = "n")
 
 # bottomright plot
 plot(data$new_date, data$Global_reactive_power, 
-     xlab = "",
+     xlab = "datetime",
      ylab = "Global reactive Power",
      type = "l"
 )
