@@ -10,7 +10,7 @@ data <- hpc_data %>%
 # transform date and time columns into POSIXct
 data$new_date <- as.POSIXct(paste(data$Date, data$Time), format="%d/%m/%Y %H:%M:%S")
 
-# initite device
+# initiate device
 png(filename = "plot4.png", width = 480, height = 480)
 
 par(mfrow = c(2, 2))
